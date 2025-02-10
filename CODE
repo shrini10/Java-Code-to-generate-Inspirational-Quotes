@@ -1,0 +1,22 @@
+import java.util.Random;
+
+public class RandomQuoteGenerator {
+    public static void main(String[] args) {
+        // Array of inspirational quotes
+        String[] quotes = {
+            "Believe in yourself and all that you are.",
+            "Do what you can, with what you have, where you are.",
+            "The only way to do great work is to love what you do.",
+            "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+            "Don't watch the clock; do what it does. Keep going."
+        };
+
+        // Generate a random index
+        Random random = new Random();
+        int index = random.nextInt(quotes.length);
+
+        // Display a random quote
+        System.out.println("Here is your inspirational quote:");
+        System.out.println(quotes[index]);
+    }
+}
